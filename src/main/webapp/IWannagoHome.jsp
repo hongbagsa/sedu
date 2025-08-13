@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>집빨리가고싶다</title>
+<title>집빨리가고싶다 </title>
 </head>
 <body>
 
