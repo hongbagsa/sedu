@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>
+	JSP요청
+	</h1>
+	<hr>
+	<a href="/sedu/jspexam/examp4.jsp?name=유니코">GET요청 방식</a>
+	<hr>
+	<form method="get" action="/sedu/jspexam/exam4.jsp">
+		<input name="name" placeholder="이름을 입력하세요">
+		<input type="submit" value="GET방식 요청">
+	</form>
+	<hr>
+	<form method="post" action="/sedu/jspexam/exam4.jsp">
+		<input name="name" placeholder="이름을 입력하세요">
+		<input type="submit" value="IMPOSTER방식 요청">
+	</form>
+</body>
+</html>

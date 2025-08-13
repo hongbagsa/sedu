@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+	font-family:'Ownglyph_ParkDaHyun',sans-serif;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+     }
+div{
+	width: 80%;
+	margin : 20px auto;
+	padding-top : 110px;
+	padding-bottom : 90px;
+    padding-left : 30px;
+	text-align : center;
+	border-radius : 30px;
+}
+form{
+	width : 60%;
+	height : 300px;
+	margin : 0px auto;
+	text-align: left;
+	padding: 20px;
+	border: 1px solid #555;
+	border-radius: 15px;
+	background-image : linear-gradient(to bottom, white, yellow);
+}
+h1{
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5), 
+           		 2px 2px 0 rgba(0, 0, 0, 0.3), 
+            	4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.tong{
+ margin-left:20px;
+}
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>펜션 예약 서비스</h1>
+<hr>
+<form method="post" action="/sedu/reservation">
+	예약자명 : <input type="text" name="username" required><br>
+	예약암호 : <input type="password" name="score" required><br>
+	룸선택 : <input type="radio"  name="room" value="골룸"> 골룸
+         <input  class="tong" type="radio"  name="room" value="심부룸"> 심부룸
+         <input class="tong" type="radio"  name="room" value="용트룸"> 용트룸
+         <input class="tong" type="radio"  name="room" value="뭉개구룸"> 뭉개구룸 <br>
+    추가요청사항:  <input type="checkbox"  name="moremoney" value="바베큐">  바베큐
+        <input type="checkbox"  name="moremoney" value="수영장"> 수영장
+		<input type="checkbox"  name="moremoney" value="낚시"> 낚시
+		<input type="checkbox"  name="moremoney" value="조식"> 조식 <br>
+		
+     예약날짜 : <input id=date name=date type=date min="2025-06-27" max="2050-01-01"> 
+     <hr>
+<button type="submit">보내기</button><button type="reset">다시작성하기</button>
+</form>
+</div>
+</body>
+</html>
